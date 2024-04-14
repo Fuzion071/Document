@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Title Here</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* Light blue background */
+            color: #333; /* Dark text color */
+        }
+        header {
+            background-color: #2969e0; /* Darker blue header */
+            color: #fff; /* White text color */
+            padding: 1px;
+            text-align: center;
+            font-size: 18pt;
+            height: 100px;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff; /* White background */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff; /* White background */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        }
+        footer {
+            bottom: 0;
+            padding: 5px;
+            width: 100%;
+            background-color: #2969e0; /* Darker blue footer */
+            color: #fff; /* White text color */
+            text-align: center;
+            position: fixed;
+            
+        }
+        .inline {
+            display: inline-block;
+            margin: 1%;
+            width: 45.66%;
+            padding: 1%;
+            background-color: #fff; /* White background */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */ 
+            text-align: center;
+            font-size: 20pt;
+        }
+        .inline:hover {
+            background-color: #2969e0;
+        }
+        .spacer{
+            padding: 5px;
+            height: 50px;
+        }
+        .video-container {
+            position: relative;
+            width: 80%;
+            padding-bottom: 45%; /* 16:9 aspect ratio (height is 56.25% of width) */
+            height: 0;
+            margin: 0 auto;
+        }
+        .video-container iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+        section img{
+            width: 100%;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Your Website Name</h1>
+    </header>
+
+    <section>
+        <h2>About Us</h2>
+        <p>This is where you can introduce your company or yourself.</p>
+    </section>
+
+    <section>
+        <h2>Image here</h2>
+        <img src="https://cdn.pixabay.com/photo/2012/08/27/14/19/mountains-55067_640.png" alt="Description of your image">
+    </section>
+
+    <section>
+        <h2>Video here</h2>
+        <div class="video-container">
+            <h2>Video</h2>
+            <iframe src="https://www.youtube.com/embed/kX_XBPwiHow" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <a href="https://www.youtube.com/watch?v=NLyglYbaEwk">
+        <div class="inline">Home</div>
+    </a>
+    <a href="https://www.youtube.com/watch?v=NLyglYbaEwk">
+        <div class="inline">Page 3</div>
+    </a>
+        
+    <div class="spacer"></div>
+    <footer>
+        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
