@@ -1,50 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Title Here</title>
-    <style>
-        body {
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f0f8ff; /* Light blue background */
             color: #333; /* Dark text color */
         }
-        header {
-            background-color: #2969e0; /* Darker blue header */
-            color: #fff; /* White text color */
-            padding: 1px;
-            text-align: center;
-            font-size: 18pt;
-            height: 100px;
-        }
-        section {
-            padding: 20px;
-            margin: 20px;
-            background-color: #fff; /* White background */
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
-        }
-        section {
-            padding: 20px;
-            margin: 20px;
-            background-color: #fff; /* White background */
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
-        }
-        footer {
+    header {
+        background-color: #2969e0; /* Darker blue header */
+        color: #fff; /* White text color */
+        padding: 1px;
+        text-align: center;
+        font-size: 18pt;
+        height: 100px;
+    }
+    footer {
+            position:fixed;
             bottom: 0;
             padding: 5px;
             width: 100%;
             background-color: #2969e0; /* Darker blue footer */
             color: #fff; /* White text color */
             text-align: center;
-            position: fixed;
-            
-        }
-        .inline {
+    }
+    
+    .section {
+        padding: 20px;
+        margin: 20px;
+        background-color: #fff; /* White background */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    }
+
+    .inline {
+        display: flex;
+        justify-content: space-between; /* Distributes the space between items */
+    }
+
+    .entry .inlin .button .a .section {
+        margin-top: 20px;
+        width: calc(50% - 10px); /* 33.33% width with some margin between */
+        margin-right: 10px; /* Adjust as needed */
+        padding: 20px;
+        background-color: #fff; /* White background */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    }
+
+    .inline .section {
+        margin-top: 20px;
+        width: calc(50% - 10px); /* 33.33% width with some margin between */
+        margin-right: 10px; /* Adjust as needed */
+        padding: 20px;
+        background-color: #fff; /* White background */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    }
+
+    .box:last-child {
+      margin-right: 0;
+    }
+
+    .entry{
+        width: 100%;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .entry .inline .section img{
+        width:100%;
+    }
+
+    .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio (height is 56.25% of width) */
+            height: 0;
+            margin: 0 auto;
+    }
+
+    .video-container iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .button {
             display: inline-block;
             margin: 1%;
             width: 45.66%;
@@ -54,33 +104,17 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */ 
             text-align: center;
             font-size: 20pt;
-        }
-        .inline:hover {
-            background-color: #2969e0;
-        }
-        .spacer{
+    }
+    .button:hover {
+        background-color: #2969e0;
+    }
+
+    .spacer{
             padding: 5px;
             height: 50px;
-        }
-        .video-container {
-            position: relative;
-            width: 80%;
-            padding-bottom: 45%; /* 16:9 aspect ratio (height is 56.25% of width) */
-            height: 0;
-            margin: 0 auto;
-        }
-        .video-container iframe {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-        }
-        section img{
-            width: 100%;
-        }
-        
-    </style>
+    }
+
+  </style>
 </head>
 <body>
 
@@ -88,49 +122,57 @@
         <h1>Protein Synthesis</h1>
     </header>
 
-    <section>
-        <h2>Background:</h2>
-        <p>Protein synthesis is the process where Amino Acids gets linked via peptide bonds in order to form a protein. This happens in 2 stages. The first stage is called Transcription and the second, Translation. </p>
-    </section>
+    <div class="entry">
 
-    <section>
-        <h2>Video on Protein synthesis: </h2>
-        <div class="video-container">
-            <h2>Video</h2>
-            <iframe src="https://www.youtube.com/embed/oefAI2x2CQM" frameborder="0" allowfullscreen></iframe>
+        <div class="section">
+            <h2>Background:</h2>
+            <p>Protein synthesis is the process where Amino Acids gets linked via peptide bonds in order to form a protein. This happens in 2 stages. The first stage is called Transcription and the second, Translation.</p>
         </div>
-    </section>
 
-    <section>
-        <h2>Transcription:</h2>
-        <img src="https://raw.githubusercontent.com/Fuzion071/Document/main/page3p1.jpg" alt="Description of your image">
-    </section>
-
-    <section>
-        <h2>Translation:</h2>
-        <img src="https://raw.githubusercontent.com/Fuzion071/Document/main/page3p2.jpg" alt="Description of your image">
-    </section>
-
-    <section>
-        <h2>Video about how to read a codon table: (for your own interest sake) </h2>
-        <div class="video-container">
-            <h2>Video</h2>
-            <iframe src="https://www.youtube.com/embed/LsEYgwuP6ko" frameborder="0" allowfullscreen></iframe>
+        <div class="section">
+            <h2>Video on Protein synthesis:</h2>
+            <div class="video-container">
+                <h2>Video</h2>
+                <iframe src="https://www.youtube.com/embed/oefAI2x2CQM" frameborder="0" allowfullscreen></iframe>
+            </div>
         </div>
-    </section>
 
+        <div class="section">
+            <h2>Transcription:</h2>
+            <img width="100%"src="https://raw.githubusercontent.com/Fuzion071/Document/main/page3p1.jpg" alt="Description of your image">
+        </div>
 
+        <div class="section">
+            <h2>Translation:</h2>
+            <img width="100%"src="https://raw.githubusercontent.com/Fuzion071/Document/main/page3p2.jpg" alt="Description of your image">
+        </div>
+
+        <div class="section">
+            <h2>Video about how to read a codon table: (for your own interest sake)</h2>
+            <div class="video-container">
+                <h2>Video</h2>
+                <iframe src="https://www.youtube.com/embed/LsEYgwuP6ko" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    
+    </div>
+
+  
     <a href="https://raw.githack.com/Fuzion071/Document/main/page1.html">
-        <div class="inline">Home</div>
+        <div class="button">Home</div>
     </a>
+
     <a href="https://raw.githack.com/Fuzion071/Document/main/page2.html">
-        <div class="inline">Page 2</div>
+        <div class="button">Page 2</div>
     </a>
-        
+
     <div class="spacer"></div>
+
     <footer>
-        <p>&copy; Protein Synthesis. Johan Klopper - u20620188. All rights reserved. Images: DBE Life Sciences Grade 12 Handbook. </p>
+        <p>Protein Synthesis. Johan Klopper - u20620188. All rights reserved. Images: DBE Life Sciences Grade 12 Handbook.</p>
     </footer>
+
+    
 
 </body>
 </html>
